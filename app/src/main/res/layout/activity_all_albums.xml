@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/subActivityStyle">
+
+    <LinearLayout style="@style/subMenuBarStyle">
+
+        <Button
+            android:id="@+id/backButton"
+            style="@style/subMenuButtonStyle"
+            android:background="@android:drawable/ic_menu_revert" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/explanationTextStyle"
+        android:text="@string/explanation_all_albums" />
+
+    <LinearLayout style="@style/horizontalLinearLayoutStyle">
+
+        <TextView
+            android:id="@+id/albumTitle"
+            style="@style/subActivityTextStyle"
+            android:layout_margin="8dp"
+            android:paddingLeft="24dp"
+            android:text="@string/album_title" />
+
+        <TextView
+            android:id="@+id/artistName"
+            style="@style/subActivityTextStyle"
+            android:layout_margin="8dp"
+            android:text="@string/artist_name" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.musicalstructure.MainActivity"
+    style="@style/subActivityStyle">
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        style="@style/singleSongStyle"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/libraryButton"
+            style="@style/button_icon"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/library" />
+
+        <Button
+            android:id="@+id/cartButton"
+            style="@style/button_icon"
+            android:layout_margin="8dp"
+            android:background="@drawable/cart" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/currentSongTitle"
+        style="@style/singleSongStyle"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        android:text="@string/song_title" />
+
+    <ImageView
+        android:id="@+id/currentAlbumArt"
+        android:layout_width="match_parent"
+        android:layout_height="184dp"
+        android:src="@drawable/a4264191917_16"/>
+
+    <TextView
+        android:id="@+id/currentSongArtist"
+        style="@style/singleSongStyle"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="4dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:text="@string/artist_name" />
+
+    <TextView
+        android:id="@+id/currentAlbumTitle"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:text="@string/album_title"
+        style="@style/singleSongStyle" />
+
+    <!-- MEDIA BUTTONS -->
+
+    <RelativeLayout style="@style/singleSongStyle">
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            style="@style/singleSongStyle">
+
+            <Button
+                style="@style/mediaButtons"
+                android:background="@android:drawable/ic_media_previous" />
+
+            <Button
+                style="@style/mediaButtons"
+                android:background="@android:drawable/ic_media_rew" />
+
+            <Button
+                style="@style/mediaButtons"
+                android:background="@android:drawable/ic_media_play" />
+
+            <Button
+                style="@style/mediaButtons"
+                android:background="@android:drawable/ic_media_pause" />
+
+            <Button
+                style="@style/mediaButtons"
+                android:background="@android:drawable/ic_media_ff" />
+
+            <Button
+                style="@style/mediaButtons"
+                android:background="@android:drawable/ic_media_next" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

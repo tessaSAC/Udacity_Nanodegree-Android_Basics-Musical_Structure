@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.musicalstructure.AllSongsActivity"
+    style="@style/subActivityStyle" >
+
+    <LinearLayout style="@style/subMenuBarStyle">
+
+        <Button
+            android:id="@+id/backButton"
+            style="@style/subMenuButtonStyle"
+            android:background="@android:drawable/ic_menu_revert" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/explanationTextStyle"
+        android:text="@string/explanation_all_songs" />
+
+    <LinearLayout style="@style/horizontalLinearLayoutStyle">
+
+        <TextView
+            android:id="@+id/albumTitle"
+            android:text="@string/album_title"
+            android:layout_margin="8dp"
+            android:paddingLeft="24dp"
+            style="@style/subActivityTextStyle" />
+
+        <TextView
+            android:id="@+id/songTitle"
+            android:text="@string/song_title"
+            style="@style/subActivityTextStyle"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:id="@+id/artistName"
+            android:text="@string/artist_name"
+            style="@style/subActivityTextStyle"
+            android:layout_margin="8dp"/>
+
+    </LinearLayout>
+</LinearLayout>

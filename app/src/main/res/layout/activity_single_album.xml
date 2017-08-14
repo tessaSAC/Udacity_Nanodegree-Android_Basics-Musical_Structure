@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/subActivityStyle"
+    tools:context="com.example.android.musicalstructure.SingleAlbumActivity">
+
+    <LinearLayout style="@style/subMenuBarStyle">
+
+        <Button
+            android:id="@+id/backButton"
+            style="@style/subMenuButtonStyle"
+            android:background="@android:drawable/ic_menu_revert" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/explanationTextStyle"
+        android:text="@string/explanation_single_album" />
+
+    <TextView
+        style="@style/singleSongStyle"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/album_title"
+        android:textAlignment="center"
+        android:textSize="48sp" />
+
+    <ImageView
+        android:id="@+id/currentAlbumArt"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/a4264191917_16" />
+
+    <LinearLayout style="@style/horizontalLinearLayoutStyle">
+
+        <TextView
+            android:id="@+id/songTitle"
+            style="@style/subActivityTextStyle"
+            android:layout_margin="8dp"
+            android:paddingLeft="24dp"
+            android:text="@string/song_title" />
+
+        <TextView
+            android:id="@+id/artistName"
+            style="@style/subActivityTextStyle"
+            android:layout_margin="8dp"
+            android:text="@string/artist_name" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

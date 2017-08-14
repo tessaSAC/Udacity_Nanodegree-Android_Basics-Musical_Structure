@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Musical Structure</string>
+    <string name="song_title">Song Title</string>
+    <string name="artist_name">Artist Name</string>
+    <string name="album_title">Album Title</string>
+    <string name="explanation_all_albums">All Albums View\n\nThis should look like a list of albums. Each album also has various links to an appropriate view; for example:</string>
+    <string name="explanation_all_songs">All Songs View\n\nThis should look like a list of songs. Each song also has various links to an appropriate view; for example:</string>
+    <string name="explanation_purchase">IAP View\n\nTo handle payment, e.g. if the user doesn\'t own this song and wants to purchase it, I would use the Google in-app billing library: https://developer.android.com/google/play/billing/billing_library.html\n\nFirst it seems like I\'d have to use the querySkuDetailsAsync method, followed by the onSkuDetailsResponse method.\n\nTo purchase an item it looks like I need the launchBillingFlow method, which will automatically let the user know if the transaction was successful with onPurchasesUpdated.</string>
+    <string name="explanation_single_album">Single Album View\n\nThis should look like a page for a single album, which includes a track list. Each song also has various links to an appropriate view; for example:</string>
+    <string name="explanation_single_artist">Single Artist View\n\nThis should look like a list of songs from a Single Artist. Each song also has various links to an appropriate view; for example:</string>
+</resources>
